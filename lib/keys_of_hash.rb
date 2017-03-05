@@ -1,5 +1,5 @@
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of(*arguments)
+  	keep_if {|key, value| arguments.include?(value)}.keys
   end
 end
